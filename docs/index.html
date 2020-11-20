@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Can I see You now?</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/plugin/normalize.css">
+    <link rel="stylesheet" href="css/common_style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+    <script>//Adobe フォント読み込み
+        (function (d) {
+            var config = {
+                kitId: 'cpe5khq',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <script type="text/javascript">//FOUTを防ぐため
+        setTimeout(function () {
+            document.getElementsByTagName("html")[0].classList.add("loading-delay");
+        }, 3000);
+    </script>
+</head>
+
+<body>
+    <div class="background-img">
+        <div class="top-title">
+            麗山望
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="title">
+            Test
+        </div>
+        <div class="sub-title">
+            _TESTTEST
+        </div>
+
+        <p class="document">
+            テスト文章テスト文章テスト文章テスト文章テスト文章テスト文章テスト文章テスト文章
+        </p>
+
+        <div class="sub-title">_TEST2</div>
+        <div class="document">
+            テスト文章2テスト文章2テスト文章2テスト文章2テスト文章2テスト文章2テスト文章2
+        </div>
+    </div>
+</body>
+
+</html>

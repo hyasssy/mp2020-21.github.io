@@ -1,0 +1,22 @@
+/*共通CSS*/
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+@font-face {
+  font-family: "Osaka";
+  src: url(../fonts/Osaka.ttf);
+}
+@font-face {
+  font-family: "Moon";
+  src: url(../fonts/MoonLight.otf);
+}
+@font-face {
+  font-family: "AppliMincho";
+  src: url(../fonts/AppliMincho.otf);
+}
+
+html {
+  visibility: hidden; /*FOUTを防ぐ*/
+}
+html.wf-active,
+html.loading-delay {
+  visibility: visible; /*FOUTを防ぐ*/
+}
