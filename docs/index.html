@@ -3,56 +3,120 @@
 
 <head>
     <title>MEDIA PRACTICE 20-21</title>
+    <link rel="icon" type="image/svg" href="images/favicon.svg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/plugin/normalize.css">
     <link rel="stylesheet" href="css/common_style.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/smartphone.css">
+    <link rel="stylesheet" href="css/smartphone_280px.css">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
-    <script> //Adobe フォント読み込み
-        (function (d) {
-            var config = {
-                kitId: 'cpe5khq',
-                scriptTimeout: 3000,
-                async: true
-            },
-                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'asg0vhc',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
         })(document);
-    </script>
+      </script>
     <script type="text/javascript"> //FOUTを防ぐため
         setTimeout(function () {
             document.getElementsByTagName("html")[0].classList.add("loading-delay");
         }, 3000);
     </script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('a[href^=#]').click(function(){
+                var speed = 1000;
+                var href= $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var position = target.offset().top;
+                $("html, body").animate({scrollTop:position}, speed, "swing");
+                return false;
+            });
+        });
+    </script>
 </head>
 
 <body>
     <!-- <div class="background-img"> -->
-        <div class="top-title">
-           MEDIA PRACTICE 20-21
-        </div>
-    <div class="content">
-        <p class="title">
-        会期：2021年1月15日〜17日<br>
-        時間：11時〜19時<br>
-        会場：東京藝術大学 横浜校地 元町中華街校舎
-        <span>神奈川県横浜市中区山下町116｜<a href="https://goo.gl/maps/SX3Y8GeA8UzhfSFMA" target=_blank>Google Mapで開く</a></span>
-        <div class=map>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.5727459843033!2d139.64414481528212!3d35.44061255073792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185ce3e0d84e95%3A0x1faa02aa1b8a8e21!2z5p2x5Lqs6Jed6KGT5aSn5a2mIOWkp-WtpumZouaYoOWDj-eglOeptuenkSDlhYPnlLrkuK3oj6_ooZfmoKHoiI4!5e0!3m2!1sja!2sjp!4v1607438924997!5m2!1sja!2sjp" width="700" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        </div>
-        </p>
 
-        <p class="sub-title">入場無料<br>
-        主催　東京藝術大学大学院映像研究科｜横浜市文化観光局</p>
 
-        <p class="document">
-            ※入場規定！入場規定！入場規定！入場規定！入場規定！入場規定！入場規定！入場規定！<br>
-            　入場規定！入場規定！入場規定！入場規定！入場規定！入場規定！入場規定！入場規定！
-        </p>
+    <div class="page-top">
+    <div class="backStr" id="NamesArea"></div>
+    <script type="text/javascript" src="scripts/names.js"></script>
 
+
+    <div class="top-header"></div>
+    <div class="box">
+        <div class="title00" id="title00_yokoku">予告</div>
+        <div class="title01"><img src="images/teaser_logo.svg"></div>
+        <div class="countdown" id="RealtimeCountdownArea">XXdXXhXXmXXs...</div>
         <script type="text/javascript" src="scripts/countdown.js"></script>
-        <p class="sub-title" id="RealtimeCountdownArea">※カウントダウン表示※</p>
     </div>
+    <div class="arrow-box"><div class="arrow00">
+        <a href="#title"><img src="images/arrow.svg" class="arrow"></a>
+    </div></div>
+        
+    
+    </div>
+
+    <div class="margin-empty" id="title"></div>
+
+    <div class="middle">
+    <div class="middle-box-01">
+    
+        <div class="title01">
+            <span>修士課程修了制作展／</span><span>修士一年次成果発表会</span>
+        </div>
+        <div class="title00">
+            <span>東京藝術大学</span><span>映像研究科</span><span>メディア映像専攻</span> <span>年次成果発表会</span>
+        </div>
+
+    </div>
+
+    <div class="middle-box-02">
+        <div class="border">
+            <img src="images/border.svg">
+        </div>
+        <p class="details00">
+            会期：2021.1.15.Fri - 17.Sun<br>
+            時間：11:00-19:00 <span id="details00_detail">(最終入場は18:30まで)</span><br>
+            入場：無料<br>
+            場所：東京藝術大学横浜校地元町中華街校舎<br>
+            <span id="details00_detail">　神奈川県横浜市中区山下町116｜
+            <a href="https://goo.gl/maps/SX3Y8GeA8UzhfSFMA" target=_blank>Google Mapで開く</a></span><br>
+            <div class=map>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.5727459843033!2d139.64414481528212!3d35.44061255073792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185ce3e0d84e95%3A0x1faa02aa1b8a8e21!2z5p2x5Lqs6Jed6KGT5aSn5a2mIOWkp-WtpumZouaYoOWDj-eglOeptuenkSDlhYPnlLrkuK3oj6_ooZfmoKHoiI4!5e0!3m2!1sja!2sjp!4v1607438924997!5m2!1sja!2sjp" width="90%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <p class="details01-s">
+            <span>　みなとみらい線元町・中華街駅</span>3番出口より徒歩6分。<br>
+            <span>　JR京浜東北線・根岸線石川町駅</span>北口より徒歩8分。
+            </p>
+        </p>
+        <p class="details01">
+            主催：東京藝術大学大学院映像研究科・<span>横浜市文化観光局</span><br>
+            協力：ソフトバンク株式会社CSR本部<br>
+        </p>
+    </div>
+
+    <div class="margin"> </div>
+    </div></div>
+
+
+    <div class="contact"><span>お問い合わせ　メディア映像教員室</span><br>
+    Mail: media-practice@gsfnm.jp</div>
+
+    <div class="copyright">©︎MEDIA PRACTICE 2020-21</div>
+
+
+
+
+
 </body>
 
 </html>

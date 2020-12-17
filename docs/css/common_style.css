@@ -12,6 +12,18 @@
   font-family: "AppliMincho";
   src: url(../fonts/AppliMincho.otf);
 }
+@font-face {
+  font-family: "HiraginoW4";
+  src: url(../fonts/Hiragino_W4.ttc);
+}
+@font-face {
+  font-family: "HiraginoW7";
+  src: url(../fonts/Hiragino_W7.ttc);
+}
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url(../fonts/HelveticaNeue-Bold.ttf);
+}
 
 html {
   visibility: hidden; /*FOUTを防ぐ*/

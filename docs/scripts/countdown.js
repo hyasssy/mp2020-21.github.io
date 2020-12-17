@@ -50,16 +50,44 @@ function showCountdown() {
    var dMin   = diff2Dates / ( 1000 * 60 );   // 分
    diff2Dates = diff2Dates % ( 1000 * 60 );
    var dSec   = diff2Dates / 1000;   // 秒
-   var msg2 = Math.floor(dDays) + "日"
-            + Math.floor(dHour) + "時間"
-            + Math.floor(dMin) + "分"
-            + Math.floor(dSec) + "秒";
+
+
+   // 二桁表示
+   var Days;
+   if (String(Math.floor(dDays)).length == 1) {
+      Days = "0" + Math.floor(dDays)
+   } else {
+      Days = Math.floor(dDays)
+   }
+   var Hour;
+   if (String(Math.floor(dHour)).length == 1) {
+      Hour = "0" + Math.floor(dHour)
+   } else {
+      Hour = Math.floor(dHour)
+   }
+   var Min;
+   if (String(Math.floor(dMin)).length == 1) {
+      Min = "0" + Math.floor(dMin)
+   } else {
+      Min = Math.floor(dMin)
+   }
+   var Sec;
+   if (String(Math.floor(dSec)).length == 1) {
+      Sec = "0" + Math.floor(dSec)
+   } else {
+      Sec = Math.floor(dSec)
+   }
+
+   var msg2 = Days + "d"
+            + Hour + "h"
+            + Min + "m"
+            + Sec + "s...";
 
    // 表示文字列の作成
    var msg;
    if( dnumTarget > dnumNow ) {
       // まだ期限が来ていない場合
-      msg = "開催まであと" + msg2 + "です！";
+      msg = msg2;
    }
    else {
       // 期限が過ぎた場合

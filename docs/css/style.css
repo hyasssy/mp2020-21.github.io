@@ -11,50 +11,295 @@ html {
 
 body {
   background: rgb(255, 255, 255);
+  scrollbar-face-color: #1F5290;
 }
 
-.fixed-title {
+.page-top {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: left;
+  align-items: center;
+  overflow: hidden;
+}
+  .top-header {
+    position: relative;
+    flex: 2.75;
+    display: inline;
+  }
+  .box {
+    width: 90%;
+    position: relative;
+    text-align: right;
+    flex: 5;
+  }
+  .arrow-box {
+    flex: 0.5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .page-top .backStr {
+    position: absolute;
+    display: inline;
+    font-family: "HiraginoW4";
+    font-size: 2rem;
+    line-height: 2.45rem;
+    color: #C8CED1;
+    top: 0%;
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+
+.title00 {
+  color: #1F5290;
+  font-family: "HiraginoW7";
+  font-size: 3rem;
+  letter-spacing: 0.8px;
+  margin-bottom: 13rem;
+}
+  #title00_yokoku{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 0px;
+  }
+
+span {
+  display: inline-block;
+}
+
+.title01 {
+  color: #1F5290;
+  font-family: "HiraginoW4";
+  font-size: 1.75rem;
+  letter-spacing: 0.8px;
+}
+  .title01 img{
+    display: block;
+    margin:auto;
+    /* width: 30%; */
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+    min-width: 250px;
+  }
+
+.title02 {
+  width: 30%;
+  color: #FFFFFF;
+  margin: auto;
+  font-size: 8rem;
+  transform: scale(0.9, 1);
+  background-color: #1F5290;
+  font-family: "HelveticaNeue";
+  font-weight: 900;
+  letter-spacing: 0.6px;
+  line-height: 90%;
+}
+
+.countdown {
+  color: #1F5290;
+  font-family: futura-pt,sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 0.8px;
+  text-align: center;
+  font-size: 5.5rem;
+  margin-top: -1%;
+  margin-left: -1.25%;
+  margin-bottom: 0%;
+}
+
+.arrow00 {
+  color: #1F5290;
+  font-family: "HiraginoW4";
+  letter-spacing: 0.8px;
+  /* margin-top: 20rem; */
+}
+  .arrow00 img{
+    display: relative;
+    width: 100%;
+    height: auto;
+    max-width: 100px;
+    min-width: 100px;
+  }
+
+.arrow {
+  animation-name: arrow-animation;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1.5s;
+}
+  @keyframes arrow-animation {
+    0% {
+        transform: translate(0,0px);
+    }
+    100% {
+        transform: translate(0,-15px)
+    }
+  }
+
+.middle {
+  /* background-color: aquamarine; */
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 38%;
+}
+  .middle-box-01 {
+    position: relative;
+    /* background-color: blue; */
+    width: 100%;
+    max-width: 900px;
+    min-width: 300px;
+    margin-top: 8%;
+  }
+
+  .middle-box-02 {
+    position: relative;
+    overflow: hidden;
+    background-color: #FCFDFC;
+    width: 100%;
+    max-width: 900px;
+    min-width: 300px;
+    margin-bottom: -5%;
+    margin-right: 0;
+  }
+    .middle-box-02 .border {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      margin-bottom: -5%;
+      text-align: right;
+    }
+    .middle-box-02 .border img {
+      width: 40px;
+    }
+
+.details00 {
+  color: #1F5290;
+  font-family: a-otf-futo-go-b101-pr6n,sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: 0.85px;
+  line-height: 25px;
+  margin-top: 0rem;
+}
+  #details00_detail {
+    color: #1F5290;
+    font-family: a-otf-gothic-bbb-pr6n,sans-serif;
+    /* font-weight: 400; */
+    letter-spacing: 0.85px;
+    font-size: 1.5rem;
+    /* line-height: 2.25rem; */
+  }
+  #details00_detail a {
+    color: #0071E2;
+  }
+  #details00_detail a:visited {
+    color: #6200E2;
+  }
+  #details00_detail a:hover {
+    color: #AD2E25;
+  }
+    #details00_detail span {
+      font-weight: 900;
+      line-height: 2.25rem;
+    }
+
+.details01 {
+  color: #1F5290;
+  font-family: a-otf-gothic-bbb-pr6n,sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  letter-spacing: 0.85px;
+  margin-top: 10%;
+  margin-right: 10%;
+}
+
+.details01-s {
+  color: #1F5290;
+  font-family: a-otf-gothic-bbb-pr6n,sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  letter-spacing: 0.85px;
+  margin-top: 1.25%;
+  margin-left: 0.5%;
+  }
+  .details01-s span {
+      font-weight: 900;
+  }
+
+.margin {
+  margin-top: 15%;
+}
+
+.margin-empty {
+  margin-top: 35%;
+}
+
+.copyright {
+  font-family: a-otf-gothic-bbb-pr6n,sans-serif;
+  color: #1F5290;
+  text-align: center;
+}
+
+.contact {
+  color: #1F5290;
+  font-family: a-otf-gothic-bbb-pr6n,sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  letter-spacing: 0.95px;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  line-height: 1.75rem;
+  text-align: center;
+}
+  .contact span {
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+
+/* .fixed-title {
   color: rgba(137, 183, 204);
   font-size: 1.5rem;
   font-weight: 800;
   font-family: "futura-pt";
   letter-spacing: 1px;
-}
+} */
 
-.background-img {
+/* .background-img {
   position: relative;
   background-image: url("../img/test1.png");
   height: calc(100% - 1.2rem);
   margin-top: 0.6rem;
   margin-right: 0.6rem;
   margin-left: 0.6rem;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
+} */
 
-.top-title {
-  /* position: absolute; */
-  margin-top: 7rem;
-  margin-bottom: 7rem;
-  margin-left: 4rem;
-  font-size: 35px;
-  line-height: 25px;
-  font-weight: 700;
-  letter-spacing: 1.6px;
-  font-family: futura-pt;
-  color: rgb(0, 0, 0);
-}
 
-.content {
+/* .content {
   margin-left: 4.6rem;
   margin-right: 4.6rem;
   margin-bottom: 10rem;
   margin-top: 5rem;
-}
+} */
 
-.title {
+/* .title {
   position: relative;
   font-size: 18px;
   line-height: 25px;
@@ -86,12 +331,9 @@ body {
   letter-spacing: 0.5px;
   margin-top: 2rem;
   margin-bottom: 5rem;
-}
+} */
 
 .map {
-  margin-top: 0.3rem;
-  margin-bottom: 0.1rem;
-}
-
-@media screen and (max-width: 480px) {
+  margin-top: -10px;
+  margin-left: 10px;
 }
