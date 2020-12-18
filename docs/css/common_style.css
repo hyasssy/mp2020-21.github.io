@@ -32,3 +32,10 @@ html.wf-active,
 html.loading-delay {
   visibility: visible; /*FOUTを防ぐ*/
 }
+html a {
+  color: #4498ff;
+  transition: 0.3s;
+}
+html a:hover {
+  color: #9cceeb;
+}
