@@ -87,7 +87,7 @@ function showCountdown() {
    var msg;
    if( dnumTarget > dnumNow ) {
       // まだ期限が来ていない場合
-      msg = "あと"+msg2;
+      msg = msg2;
    }
    else {
       // 期限が過ぎた場合
