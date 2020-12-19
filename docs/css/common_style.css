@@ -109,7 +109,8 @@ body {
 #title00_yokoku {
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 0rem;
+  margin-bottom: 0.5rem;
+  color: rgba(250, 251, 250);
 }
 span {
   display: inline-block;
