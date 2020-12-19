@@ -145,3 +145,30 @@
 
  
 }
+
+@media (orientation: landscape) and (max-width: 767px) {
+
+
+  .top-header {
+    flex: 1.5;
+  }
+  .box {
+    width: 40%;
+  }
+  .countdown {
+    font-size: 6vw;
+  }
+  .backStr {
+    font-size: 2vw;
+    line-height: 2.25vw;
+  }
+  .middle {
+    width: 90%;
+    margin-left: 4.5vw;
+  }
+  #title00_yokoku{
+    margin-top: 3.5%;
+  }
+
+
+}
