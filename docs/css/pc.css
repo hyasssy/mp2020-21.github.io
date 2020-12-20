@@ -54,12 +54,14 @@
   position: relative;
   overflow: hidden;
   z-index: 50;
-  background-color: rgba(250, 251, 250, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   width: 100%;
   max-width: 900px;
   min-width: 300px;
   margin-bottom: -5%;
   margin-right: 0;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
   box-shadow: 6px 6px #000000;
 }
 .details00 {
