@@ -97,9 +97,6 @@
     font-size: 3vw;
     display: inline-block;
   }
-  #details00_detail span {
-    font-weight: 900;
-  }
 .details01-s {
     color: #000000;
     font-family: a-otf-gothic-bbb-pr6n,sans-serif;
@@ -110,7 +107,7 @@
     margin-left: 2%;
     }
   .details01-s span {
-      font-weight: 900;
+    font-family: a-otf-futo-go-b101-pr6n, sans-serif;
   }
 .details01 {
   color: #000000;

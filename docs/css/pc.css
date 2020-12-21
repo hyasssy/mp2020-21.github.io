@@ -84,7 +84,8 @@
     font-size: 1.5rem;
   }
   #details00_detail span {
-    font-weight: 900;
+    font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+    font-weight: 600;
     line-height: 2.25rem;
   }
 .details01 {
@@ -106,7 +107,7 @@
   margin-left: 0.5%;
 }
   .details01-s span {
-    font-weight: 900;
+    font-family: a-otf-futo-go-b101-pr6n, sans-serif;
   }
 .margin-empty {
   margin-top: 35%;
