@@ -183,3 +183,14 @@ span {
   font-size: 1.5rem;
   font-family: a-otf-futo-go-b101-pr6n, sans-serif;
 }
+
+.notes {
+  position: relative;
+  z-index: 100;
+  color: #000000;
+  font-family: a-otf-gothic-bbb-pr6n, sans-serif;
+  letter-spacing: 0.85px;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
