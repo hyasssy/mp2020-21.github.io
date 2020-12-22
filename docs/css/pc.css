@@ -43,7 +43,7 @@
   margin-bottom: 1rem;
 }
 .title00 span {
-  white-space: nowrap; /*改行させない*/
+  display: inline-block; /*改行対策*/
 }
 #title00_yokoku {
   color: #000000;
