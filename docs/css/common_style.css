@@ -31,6 +31,10 @@
   src: url(../fonts/Hiragino_W4.ttc);
 }
 @font-face {
+  font-family: "HiraginoW2";
+  src: url(../fonts/Hiragino_W2.ttc);
+}
+@font-face {
   font-family: "HiraginoW7";
   src: url(../fonts/Hiragino_W7.ttc);
 }
